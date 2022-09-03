@@ -10,7 +10,6 @@
 body{
     background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
     background-size: contain;
-    /* overflow-x: hidden; */
 }
 .nav-container{
     position: fixed;
@@ -34,10 +33,13 @@ body{
     width: 2em;
     margin: 0 auto;
     cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+    
 }
 .mobile-scroll-tab-active{
     height: 5em;
 }
+
 .mobile-icon-active{
     transform: rotate(-90deg);
 }
@@ -60,12 +62,11 @@ body{
     visibility:visible;
     transition: all 200ms linear;
 }
-.mobile-links-active a,
 .mobile-links-container a{
     text-decoration: none;
     color:black;
+    -webkit-tap-highlight-color: transparent;
 }
-
 .header,
 .projects-header,
 .certificates-header{
