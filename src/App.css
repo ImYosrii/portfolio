@@ -1,0 +1,292 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@476&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body{
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: contain;
+    /* overflow-x: hidden; */
+}
+.nav-container{
+    position: fixed;
+    width:100%;
+    display: block;
+    z-index: 1;
+}
+.mobile-scroll-tab{
+    background: white;
+    height: 1.9em;
+    font-size: 1.5rem;
+    transition: all 200ms linear;
+    padding-top:1px;
+    box-shadow: 2px 6px 11px 0px rgba(0, 0, 0, .2);
+}
+.mobile-scroll-icon{
+    position: relative;
+    top: .3em;
+    text-align: center;
+    transition: all 200ms linear;
+    width: 2em;
+    margin: 0 auto;
+    cursor: pointer;
+}
+.mobile-scroll-tab-active{
+    height: 5em;
+}
+.mobile-icon-active{
+    transform: rotate(-90deg);
+}
+.mobile-links-container{
+    visibility: hidden;
+    margin-top: -.45em;
+}
+.mobile-links-active,
+.mobile-links-container{
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: center;
+    margin-left: 1.7em;
+    gap: 2em;
+}
+.mobile-links-active{
+    display: flex;
+    margin-top: 1.3em;
+    justify-content: center;
+    visibility:visible;
+    transition: all 200ms linear;
+}
+.mobile-links-active a,
+.mobile-links-container a{
+    text-decoration: none;
+    color:black;
+}
+
+.header,
+.projects-header,
+.certificates-header{
+    text-align: center;
+    color: white;
+    border:.14em solid white;
+    font-family: 'Montserrat', sans-serif;
+    height: 10.5%;
+    margin-top: 5.8em;
+    padding: .6em;
+    animation: title 2s ease 1;
+    animation-fill-mode: forwards;
+    border-radius: .2em;
+    
+}
+
+@keyframes title {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+.intro-container{
+    background:white;
+    opacity: 0;
+    width:70%;
+    margin:0 auto;
+    margin-top: 4em;
+    text-align: center;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+    padding:.5em;
+    animation: title 2s linear 1;
+    animation-fill-mode: forwards;
+    animation-delay: 1s;
+    border-radius: .2em;
+}
+.intro-header{
+    margin-top: 2em;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bolder;
+}
+.intro-details{
+    margin-top: 1.5em;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 1.2rem;
+}
+.skills-container{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 1.5em;
+    font-size: 1.3rem;
+    color: rgb(83, 83, 83);
+}
+.skill-react,
+.skill-html,
+.skill-css,
+.skill-js,
+.skill-redux,
+.skill-bootstrap,
+.skill-python{
+    transition: all 100ms linear;
+}
+.skill-react:hover{
+    color:rgb(138, 206, 228);
+    transform: scale(1.5);
+}
+.skill-html:hover {
+    color: orangered;
+    transform: scale(1.5);
+}.skill-css:hover {
+    color: blue;
+    transform: scale(1.5);
+}.skill-js:hover {
+    color: rgb(194, 194, 2);
+    transform: scale(1.5);
+}.skill-redux:hover {
+    color: purple;
+    transform: scale(1.5);
+}.skill-bootstrap:hover {
+    color: rgb(177, 1, 177);
+    transform: scale(1.5);
+}.skill-python:hover {
+    color:rgb(8, 119, 230);
+    transform: scale(1.5);
+}
+.intro-links{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 3em;
+    margin-bottom: 1em;
+}
+.intro-links a{
+    text-decoration: none;
+    color:gray;
+    font-size: 1.3rem;
+    transition: all 100ms linear;
+}
+.intro-links a:hover{
+    color:black;
+    transform: scale(1.5);
+}
+.intro-links a:active{
+    color:black
+}
+.projects-container,
+.certificates-container{
+    opacity: 0;
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 4em;
+    padding: .7em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    animation: title 2s linear 1;
+    animation-fill-mode: forwards;
+    animation-delay: 1.5s;
+    
+}
+.project-container,
+.certificate-container{
+    background:rgb(240, 240, 240);
+    margin: .7em 0;
+    border-radius: .2em;
+    padding: 1em .5em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 3em;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+    
+}
+.project-image,
+.certificate-image{
+    width: 90%;
+}
+.project-title,
+.certificate-title,
+.project-description,
+.project-link,
+.certificate-link,
+.project-container a button,
+.certificate-container a button,
+.project-date,
+.certificate-date{
+    font-family: 'Montserrat', sans-serif;
+    margin:.5em 0;
+    text-align: center;
+}
+.project-title,
+.certificate-title{
+    font-size: 1.3rem;
+}
+.project-description{
+    font-size: .9rem;
+}
+.project-container a button,
+.certificate-container a button{
+    padding: .6em 3em;
+    background:#1682a9 ;
+    border: none;
+    border-radius: .4em;
+    color:white;
+}
+.project-container a button:hover,
+.certificate-container a button:hover{
+    background:#136f91;
+    cursor: pointer;
+}
+.project-link,
+.certificate-link{
+    text-decoration: none;
+    color:white;
+}
+.certificates-header{
+    margin-top: 4.5em;
+}
+.certificates-container {
+    margin-bottom: 3em;
+}
+.footer-container{
+    background-color:white;
+    box-shadow: 2px 6px 11px 5px rgba(0, 0, 0, .2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.footer-copyright{
+    margin-top: 1em;
+    color:gray;
+}
+.footer-intisials{
+    margin-top: 1em;
+    margin-bottom: 1em;
+    font-family: 'Dancing Script';
+    color: gray;
+}
+
+@media (min-width: 1200px) {
+    .projects-container,
+    .certificates-container {
+        display: grid;
+        grid-template: 25em 25em / 20em 20em 20em 20em;
+        flex-direction: row;
+        justify-content: center;
+        gap: 3em;
+    }
+    .project-container,
+    .certificate-container {
+        margin: .7em 1em;
+        width: 100%;
+        min-height: 40vh;
+        padding-left: .5em;
+        padding-right: .5em;
+
+    }
+    .project-title,
+    .certificate-title{
+        font-size: 1rem;
+    }
+}
