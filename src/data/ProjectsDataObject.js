@@ -3,6 +3,8 @@ import extention from '../images/extension.PNG'
 import tenzies from '../images/tenzies.PNG'
 import fitMeUp from '../images/fitMeUp.PNG'
 import portfilo from '../images/portfilo.PNG'
+import catchMe from '../images/catchMe.PNG'
+
 const data = [
     {
         id:1,
@@ -41,8 +43,16 @@ const data = [
         img:portfilo,
         title:'Personal Website',
         description:'A new personal website',
-        url:'https://imyosrii.github.io/',
+        url:'https://github.com/ImYosrii/portfolio',
         date:'2022/8/30'
     },
+    {
+        id:6,
+        img:catchMe,
+        title:'Catch Me if you Scan',
+        description:'An exciting game that allows you to compete with your friends to become the ultimate monster collector.',
+        url:'https://github.com/CMPUT301W23T07/catch-me-if-you-scan',
+        date:'2023/3/3'
+    }
 ]
 export default data
