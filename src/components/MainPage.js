@@ -31,7 +31,7 @@ export default function MainPage(){
             </div>
             <div className="intro-container">
                 <h2 className="intro-header">Who am I</h2>
-                <p className="intro-details">Yosri, A 20 years old passionate web developer and a CS student at the University of Alberta</p>
+                <p className="intro-details">Yosri, A Passionate Web Developer and a CS Student at The University of Alberta</p>
                 <h2 className="intro-header">Skills</h2>
                 <div className='skills-container'>
                     <p className="skill-react">
