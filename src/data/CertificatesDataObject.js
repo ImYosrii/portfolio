@@ -1,5 +1,6 @@
 import advanceReactCer from '../images/advanceReactCer.PNG'
 import tryHackMeCer from '../images/tryHackMeCer.PNG'
+import frontCarer from '../images/frontCarer.PNG'
 const data = [
     {
         id:1,
@@ -14,6 +15,13 @@ const data = [
         title:'Advanced React',
         url:'https://scrimba.com/certificate/uNbKDvS5/greact',
         date:'2022/7/30'
+    },
+        {
+        id:3,
+        img:frontCarer,
+        title:'The Frontend Career Path',
+        url:'https://scrimba.com/certificate/uNbKDvS5/gfrontend',
+        date:'2023/8/7'
     }
 ]
 export default data
