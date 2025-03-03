@@ -3,7 +3,6 @@ import {BsGithub} from 'react-icons/bs'
 import {BsLinkedin} from 'react-icons/bs'
 import {BsWhatsapp} from 'react-icons/bs'
 import {MdOutlineMail} from 'react-icons/md'
-import {BsInstagram} from 'react-icons/bs'
 import {FaReact} from 'react-icons/fa'
 import {AiOutlineHtml5} from 'react-icons/ai'
 import {SiCss3} from 'react-icons/si'
@@ -11,6 +10,7 @@ import {TbBrandJavascript} from 'react-icons/tb'
 import {SiRedux} from 'react-icons/si'
 import {FaBootstrap} from 'react-icons/fa'
 import {SiPython} from 'react-icons/si'
+import { SiThreedotjs } from "react-icons/si";
 
 import Projects from './Projects'
 import Certificates from './Certificates'
@@ -31,9 +31,13 @@ export default function MainPage(){
             </div>
             <div className="intro-container">
                 <h2 className="intro-header">Who am I</h2>
-                <p className="intro-details">Yosri, A Passionate Web Developer and a CS Student at The University of Alberta</p>
+                <p className="intro-details">Yosri, a Creative Web Developer. I am a graduate student of the University of Alberta. I enjoy creating unforgettable interactive websites experiences utilizing skills such as R3F, ThreeJS, GLSL, and Blender.  </p>
                 <h2 className="intro-header">Skills</h2>
                 <div className='skills-container'>
+                    <p className="skill-three">
+                        <SiThreedotjs />
+
+                    </p>
                     <p className="skill-react">
                         <FaReact />
                     </p>
@@ -63,7 +67,6 @@ export default function MainPage(){
                     <a href="https://github.com/ImYosrii" target="_blank"><BsGithub /></a>
                     <a href="https://www.linkedin.com/in/yosri-swidan-698267229/" target="_blank"><BsLinkedin /></a>
                     <a href="https://api.whatsapp.com/send?phone=17806040522" target="_blank"><BsWhatsapp /></a>
-                    <a href="https://www.instagram.com/" target="_blank"><BsInstagram /></a>
                 </div>
             </div>
             <div id='projects' style={{display: 'flex', justifyContent: 'center'}}>

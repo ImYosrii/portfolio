@@ -111,10 +111,13 @@ body{
     font-weight: bolder;
 }
 .intro-details{
+    margin: 0 auto;
     margin-top: 1.5em;
+    line-height: 1.8rem;
     font-family: 'Montserrat', sans-serif;
     font-weight: 300;
     font-size: 1.2rem;
+    width:80%;
 }
 .skills-container{
     display: flex;
@@ -123,6 +126,7 @@ body{
     font-size: 1.3rem;
     color: rgb(83, 83, 83);
 }
+.skill-three,
 .skill-react,
 .skill-html,
 .skill-css,
@@ -131,6 +135,10 @@ body{
 .skill-bootstrap,
 .skill-python{
     transition: all 100ms linear;
+}
+.skill-three:hover{
+    color:rgb(140, 138, 138);
+    transform: scale(1.5);
 }
 .skill-react:hover{
     color:rgb(138, 206, 228);
