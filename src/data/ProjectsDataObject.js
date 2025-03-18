@@ -14,6 +14,7 @@ import wobble from '../images/wobble.png'
 import terrain from '../images/terrain.png'
 import portal from '../images/portal.png'
 import laptop from '../images/laptop.png'
+import thunderstore from '../images/thunderstore.png'
 
 const data = [
     {
@@ -133,7 +134,7 @@ const data = [
         img:portal,
         title:'Portal scene with custom portal GLSL Shaders.',
         description:'A Portal model that was created and baked its textures in Blender and rendered with ThreeJS with custom GLSL shaders for the portal effect and then rendered in React-Three-Fiber (R3F).',
-        url:'https://terrain-shader.netlify.app/',
+        url:'https://r3f-my-portal-scene.netlify.app/',
         date:'2025/Feb/17'
     },
     {
@@ -143,6 +144,14 @@ const data = [
         description:'A laptop model that shows my original portfolio using iFrame tag. Website was created using R3F and Drei',
         url:'https://yosri-swidan-3d.netlify.app/',
         date:'2025/Mar/2'
+    },
+    {
+        id: 17,
+        img: thunderstore,
+        title: 'A 3D E-commerce shoe customization website.',
+        description: 'A shoe customization website that allows you to customize your shoe and see it in 3D using ThreeJS and React-Three-Fiber (R3F).',
+        url: 'https://thundersotore-3d.netlify.app/',
+        date: '2025/Mar/18'
     }
 ]
 export default data

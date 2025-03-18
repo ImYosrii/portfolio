@@ -6,7 +6,8 @@ export default function Nav() {
         <div className="nav-container">
             <div className={`mobile-scroll-tab ${scroll?'mobile-scroll-tab-active':''}`}>
                 <p className={`mobile-scroll-icon ${scroll?'mobile-icon-active':''}`} 
-                   onClick={()=>setScroll(prev=>!prev)}><FaGripLines />
+                   onClick={()=>setScroll(prev=>!prev)}>
+                    <FaGripLines />
                 </p>
                 <div className={`mobile-links-container ${scroll ? 'mobile-links-active':''}`}>
                     <a href="#top">Home</a>
