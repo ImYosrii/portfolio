@@ -150,7 +150,7 @@ const data = [
         img: thunderstore,
         title: 'A 3D E-commerce shoe customization website.',
         description: 'A shoe customization website that allows you to customize your shoe and see it in 3D using ThreeJS and React-Three-Fiber (R3F).',
-        url: 'https://thundersotore-3d.netlify.app/',
+        url: 'https://thunderstore-3d.netlify.app/',
         date: '2025/Mar/18'
     }
 ]
